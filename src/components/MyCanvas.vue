@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="canvas">
       this is canvans
-      <router-view />
+      <router-view class='container'/>
   </div>
 </template>
 
@@ -15,4 +15,12 @@ export default {
 </script>
 
 <style scoped>
+.canvas {
+    height: 200px;
+}
+.container {
+    background: white;
+    margin: 10px 10px;
+    height: 100px;
+}
 </style>
