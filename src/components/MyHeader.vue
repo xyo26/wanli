@@ -10,7 +10,7 @@
           style="margin: 0px 40px 0px 0px"
         />
       </div>
-      <div v-for="tab in tabs" :key="tab.name" class="my-tab">
+      <div v-for="tab in tabs" :key="tab.name">
         <router-link :to="tab.link" class="my-link">
           <div>{{ tab.name }}</div>
         </router-link>
@@ -32,7 +32,7 @@ export default {
         },
         {
           name: "进货",
-          link: "/purchase",
+          link: "/order",
         },
         {
           name: "印染",
@@ -44,7 +44,7 @@ export default {
         },
         {
           name: "管理",
-          link: "/manage",
+          link: "/manage/suppliers",
         },
       ],
     };
